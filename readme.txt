@@ -14,4 +14,26 @@ git config --global --list    посмотреть настройки своег
 
 ls -Force
 
+git init
+
 git status
+
+git add .gitignore
+
+git commit -m "add gitignore"
+
+git add ./
+
+git commit -m "add project"
+
+git log
+
+git log --oneline
+
+git commit -am "Edit readme"
+
+
+
+
+
+
