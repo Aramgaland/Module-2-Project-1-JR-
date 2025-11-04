@@ -28,7 +28,7 @@ ls -Force
 
 git init
 
-git status     \\посмотреть какие файлы измененыБ и в каком они статусе
+git status     \\посмотреть какие файлы изменены и в каком они статусе
 
 файл gitignore должен быть в корневой папке
 
@@ -36,20 +36,45 @@ git add .gitignore  \\ добавляем файл .gitignore
 
 git commit -m "add gitignore"
 
-git add ./  добавляем все файлы в директории
+git add ./      //добавляем все файлы в директории
 
-git commit -m "add project"
+git commit -m "add project"  \\ делаем коммит и в кавычках название
 
-git log
+git log      \\ запрашиваем список коммитов
 
-git log --oneline
+git log --oneline    \\\ посмотреть одним списком коммиты
+
 
 git commit -am "Edit readme"      am - это (add и meerge)  тиип добавь этот файл в коммит и следай сам коммит
 
 
 git remote add origin https://github.com/Aramgaland/Module-2-Project-1-JR-.git
 
-git push -u origin main
+git branch -M main   создать ветку main
+
+git push -u origin main     \\ пушим ветку main
+
+git pull   \\ закачать обновленный репозиторий
+
+git clone \\  скопировать и подключиться к новому репозиторию
+
+git remote -v     \\ проверить есть ли подключенные удаленные репозитории
+
+cd ..   \\ подняться папкой наверх
+
+Ветки 
+
+    gt checkout d598588  \\  надо вводить название хэша и мы переключимся на нужный коммит
+
+    git branch   \\ посмотреть ветку в которой нахожусь
+
+    git checkout main    \\ перейти в последний коммит по имени ветки
+
+    git branch test            // создать ветку (test это название)
+
+    
+
+
 
 
 
