@@ -79,8 +79,13 @@ cd ..   \\ подняться папкой наверх
     git checkout -b effects   // создать и перейти на новую созданную ветку 
 
     https://github.com/Stanislav-Wise/javarush_project.git
-    
 
+
+
+    \\  Перекоючение веток
+     git checkout main
+      или
+      git switch main 
 
 
 
