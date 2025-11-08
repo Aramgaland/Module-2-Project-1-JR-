@@ -77,6 +77,8 @@ https://www.toptal.com/developers/gitignore https://github.com/github/gitignore/
 
 https://github.com/Stanislav-Wise/javarush_project.git
 
+создадим новый коммит 
+
 
 
 
