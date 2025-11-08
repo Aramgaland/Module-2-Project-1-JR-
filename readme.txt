@@ -82,7 +82,7 @@ https://github.com/Stanislav-Wise/javarush_project.git
 
 создадим новый коммит 
 
-мерджим ветки
+
 
     
 
@@ -107,6 +107,14 @@ https://github.com/Stanislav-Wise/javarush_project.git
       git merge test (указываем имя ветки которую хотим замерджить в ту ветку в которой мы сейчас)
 
 
+
+git log --graph  \\ тоже показывает коммиты
+
+git branch -d test2   \\ удаляем ветку и указываем ее имя
+
+git branch -D test2   \\ удалит даже если были изменения без коммита
+
+g
 
 
 
