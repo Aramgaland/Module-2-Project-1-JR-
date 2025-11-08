@@ -133,5 +133,7 @@ git log -- README.txt    \\ поиск измений по файлам
 
 git restore README.txt   \\ откатить изменения до последнего коммита
 
+git restore .  \\ отменить изменения 
 
+git reset --soft HEAD~1     \\ удалить предыдущий коммит 
 
