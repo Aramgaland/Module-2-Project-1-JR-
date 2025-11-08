@@ -76,7 +76,10 @@ cd ..   \\ подняться папкой наверх
 
     git checkout test  // переключиться к другой ветке 
     
-    git checkout -b effects   // создать и перейти на новую созданную ветку
+    git checkout -b effects   // создать и перейти на новую созданную ветку 
+
+    https://github.com/Stanislav-Wise/javarush_project.git
+    
 
 
 
