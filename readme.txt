@@ -140,3 +140,7 @@ git restore --staged readme.txt
 git reset --soft HEAD~1     \\ удалить предыдущий коммит 
 
 git reset --hard HEAD~1    \\ удалит предыдущий коммит и все изменения 
+
+git revert HEAD  \\ сщздаем новый коммит который отменит последний коммит
+
+
