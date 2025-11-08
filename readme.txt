@@ -72,6 +72,14 @@ cd ..   \\ подняться папкой наверх
 
     git branch test            // создать ветку (test это название)
 
+
+https://www.toptal.com/developers/gitignore https://github.com/github/gitignore/blob/main/Python.gitignore https://git-scm.com/book/ru/v2
+
+https://github.com/Stanislav-Wise/javarush_project.git
+
+
+
+
     
 
 
