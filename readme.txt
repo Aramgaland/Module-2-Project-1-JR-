@@ -79,6 +79,10 @@ https://github.com/Stanislav-Wise/javarush_project.git
 
 создадим новый коммит 
 
+мерджим ветки
+
+    
+
 
 
 
