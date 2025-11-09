@@ -1,0 +1,104 @@
+
+
+.welcome-button {
+  
+  display: block;               /* кнопка в отдельной строке */
+  margin: 50px auto;            /* центрирует по горизонтали */
+  width: 250px;                 /* ширина кнопки */
+  height: 60px;                 /* высота кнопки */
+  background-color: #007bff;    /* фон кнопки */
+  color: white;                 /* цвет текста */
+  font-size: 18px;              /* размер текста */
+  border: none;                 /* убрать границу */
+  border-radius: 10px;          /* закруглённые углы */
+  cursor: pointer;              /* курсор при наведении */
+  transition: all 0.3s ease;    /* плавная анимация */
+}
+
+.in-upload-button {
+
+  display: flex;                  /* включает flex-контейнер */
+  justify-content: center;        /* центрирует кнопки по горизонтали */
+  align-items: flex-start;            /* выравнивает по вертикали */
+  gap: 20px;                      /* расстояние между кнопками */
+  margin-top: 50px;
+
+}
+
+header {
+  background-color: #ffffff;   /* цвет фона */
+  color: rgb(0, 0, 0);                /* цвет текста */
+  padding: 20px 0;             /* внутренние отступы сверху и снизу */
+  text-align: center;          /* выравнивание текста по центру */
+  font-family: Arial, sans-serif; /* стиль шрифта */
+}
+
+/* Подчёркивание для активной кнопки */
+.nav-button.active {
+  border-bottom: 4px solid rgb(124, 214, 255); /* например, жёлтое подчёркивание */
+}
+
+.nav-button {
+
+  background: none;
+  color: rgb(23, 102, 155);
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease, font-weight 0.3s ease;
+  font-weight: normal;        /* обычный шрифт */
+}
+
+
+
+/* Стили для окна загрузки файлов-картинок */
+
+
+.upload-section {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.upload-dropzone {
+  border: 3px dashed #87CEFA;   /* пунктирная граница */
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #f0f8ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.upload-dropzone.dragover {
+  background-color: #e0f0ff;    /* при перетаскивании */
+  border-color: #1E90FF;
+}
+
+.upload-dropzone p {
+  margin: 0;
+  font-size: 18px;
+  color: #1E90FF;
+}
+
+.upload-click {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #87CEFA;
+}
