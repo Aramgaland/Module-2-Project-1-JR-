@@ -6,7 +6,7 @@
   margin: 50px auto;            /* центрирует по горизонтали */
   width: 250px;                 /* ширина кнопки */
   height: 60px;                 /* высота кнопки */
-  background-color: #007bff;    /* фон кнопки */
+  background-color: #007afd;    /* фон кнопки */
   color: white;                 /* цвет текста */
   font-size: 18px;              /* размер текста */
   border: none;                 /* убрать границу */
@@ -62,9 +62,14 @@ header {
 }
 
 .upload-dropzone {
-  border: 3px dashed #87CEFA;   /* пунктирная граница */
-  padding: 40px;
-  border-radius: 12px;
+  display: flex;   /* включаем флексбокс */
+  justify-content: center;
+  align-items: center; 
+  
+
+  border: 3px dashed #7ac6f5;   /* пунктирная граница */
+  padding: 80px;                  /* центр по горизонтали */
+  border-radius: 12px;            /* центр по вертикали */
   background-color: #f0f8ff;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -75,13 +80,23 @@ header {
   border-color: #1E90FF;
 }
 
-.upload-dropzone p {
+.upload-dropzone p {     /* зона закидывания файлов */
   margin: 0;
   font-size: 18px;
   color: #1E90FF;
+
+  display: flex;                 /* включаем флекс-контейнер */
+  justify-content: center;       /* центр по горизонтали */
+  align-items: center;           /* центр по вертикали */
+
+   /* ✅ задаём явные размеры */
+  width: 500px;            /* ширина области */
+  height: 250px;           /* высота области */
+  margin: 0 auto;          /* центрируем по горизонтали */
 }
 
-.upload-click {
+.upload-click {               
+  color: #1E90FF;
   text-decoration: underline;
   font-weight: bold;
   cursor: pointer;
@@ -101,4 +116,45 @@ header {
   object-fit: cover;
   border-radius: 8px;
   border: 2px solid #87CEFA;
+}
+
+.download-button {               /* Кнопка под зоной перетаскивания файлов */
+  
+  display: block;               /* кнопка в отдельной строке */
+  margin: 50px auto;            /* центрирует по горизонтали */
+  width: 250px;                 /* ширина кнопки */
+  height: 60px;                 /* высота кнопки */
+  background-color: #ffffff;    /* фон кнопки */
+  color: rgb(46, 144, 209);                 /* цвет текста */
+  font-size: 18px;              /* размер текста */
+  border: gray;                 /* убрать границу */
+  border-radius: 10px;          /* закруглённые углы */
+  cursor: pointer;              /* курсор при наведении */
+  transition: all 0.3s ease;    /* плавная анимация */
+  
+}
+
+
+/* Класс для списка файлов на страничке IMAGES */
+
+.list-in-images {  
+
+  display: flex;                  /* включает flex-контейнер */
+  flex-direction: column;  /* теперь элементы идут сверху вниз */
+  justify-content: center;        /* центрирует кнопки по горизонтали */
+  align-items: flex-start;            /* выравнивает по вертикали */
+  gap: 20px;                      /* расстояние между кнопками */
+  margin-top: 50px;
+  list-style-type: none;   /* убирает стандартные маркеры списка */
+  padding: 0;
+}
+
+
+.centered-section {    /* класс для секции со спиком картинок */
+  display: flex;
+  justify-content: center;   
+  align-items: center;       /* центр по вертикали */
+  flex-direction: column;    /* чтобы элементы шли сверху вниз */
+  
+  text-align: center;        /* для текста внутри */
 }
