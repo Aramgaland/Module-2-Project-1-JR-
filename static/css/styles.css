@@ -127,13 +127,18 @@ header {
   background-color: #ffffff;    /* фон кнопки */
   color: rgb(46, 144, 209);                 /* цвет текста */
   font-size: 18px;              /* размер текста */
-  border: gray;                 /* убрать границу */
+  border: 1px solid rgb(46, 144, 209); /* тонкая граница того же цвета, что текст */
   border-radius: 10px;          /* закруглённые углы */
   cursor: pointer;              /* курсор при наведении */
   transition: all 0.3s ease;    /* плавная анимация */
   
 }
 
+.download-button:hover {
+  background-color: #f0f8ff;     /* лёгкий фон при наведении */
+  color: #1E90FF;
+  border-color: #1E90FF;         /* рамка тоже меняется при hover */
+}
 
 /* Класс для списка файлов на страничке IMAGES */
 

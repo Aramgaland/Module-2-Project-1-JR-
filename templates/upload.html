@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="/static/css/styles.css">
 
     <title>Загружаем картинку</title>
 </head>
@@ -25,24 +25,26 @@
     <main>
 
         <section class="in-upload-button">
-            <button class="nav-button active" onclick="window.location.href='upload.html'">Загрузить</button>
-            <button class="nav-button" onclick="window.location.href='images.html'">Список картинок</button>
+            <button class="nav-button active" onclick="window.location.href='/upload/'">Загрузить</button>
+            <button class="nav-button" onclick="window.location.href='/images/'">Список картинок</button>
         </section>
         
-        <section class="upload-section">
+       <section class="upload-section">
             <h2>Загрузите ваши картинки</h2>
 
-            <div class="upload-dropzone" id="dropzone">
-                <p>Перетащите файлы сюда </p>
-                <input type="file" id="fileInput" multiple accept="image/*" hidden>
-            </div>
-            <button class="download-button" type="button"><label for="fileInput" class="upload-click">или выберите из какой директрории</label></button>
+            <form action="/upload/" method="post" enctype="multipart/form-data">
+                <div class="upload-dropzone" id="dropzone">
+                    <p>Перетащите файлы сюда</p>
+                    <input type="file" name="file" id="fileInput" accept=".jpeg, .jpg, .png, .gif" hidden>
+                </div>
 
-  <div class="preview" id="preview"></div>
+                <button type="button" class="download-button" onclick="fileInput.click()">
+                    Выбрать файл из папки</button>
+
+        <button type="submit" class="download-button">Загрузить</button>
+    </form>
 </section>
 
-
-        <section></section>
 
         <section></section>
        
