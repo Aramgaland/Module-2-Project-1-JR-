@@ -6,7 +6,7 @@ from fastapi.responses import HTMLResponse, PlainTextResponse
 from fastapi.templating import Jinja2Templates
 
 from fastapi.staticfiles import StaticFiles
-from utils.file_utils import is_allowed_file, MAX_FILE_SIZE
+from utils.file_utils import is_allowed_file, MAX_FILE_SIZE, get_name
 from pathlib import Path
 
 
@@ -51,6 +51,21 @@ async def upload_image(file: UploadFile = File(...)):
     content = await file.read(MAX_FILE_SIZE + 1)
     if len(content) > MAX_FILE_SIZE:
         raise HTTPException(status_code=400, detail='File is too big')
+    
+
+    # СОздаем папку для картинок и указываем его путь
+    new_file_name = get_name(my_file)
+    print(f'New file name: {new_file_name}')
+
+    image_dir = Path('images')
+    image_dir.mkdir(exist_ok=True)
+
+    save_path = image_dir / new_file_name
+
+    # Сохраняем сам файл
+    save_path.write_bytes(content)
+
+    print(f'{save_path}')
     
     return PlainTextResponse(f"All is good, tha is your file: {file.filename}")
 
